@@ -1,0 +1,80 @@
+{
+  "name": "nextjs-boilerplate",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "install:npm": "rm -rf node_modules && rm package-lock.json && npm i",
+    "install:yarn": "rm -rf node_modules && rm yarn.lock && yarn",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next build && next start -p 80",
+    "type-check": "tsc",
+    "lint": "npm run type-check && eslint */**/*.{ts,tsx} --quiet --fix",
+    "format": "prettier --config ./.prettierrc --write \"*/**/*{.ts,.tsx}\"",
+    "find:unused": "next-unused",
+    "test": "jest",
+    "test:watch": "npx test --watch",
+    "test:coverage": "npx jest --coverage"
+  },
+  "dependencies": {
+    "he": "^1.2.0",
+    "next": "11.0.1",
+    "next-seo": "^4.26.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "slugify": "^1.5.3",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@types/react": "17.0.11",
+    "@types/styled-components": "^5.1.10",
+    "babel-jest": "^27.0.5",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.5",
+    "next-unused": "0.0.6",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
+    "react-test-renderer": "^17.0.2",
+    "typescript": "4.3.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged --pattern '**/*.*(js|jsx|ts|tsx)'",
+      "pre-push": "npm run lint"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint '*/**/*.{ts,tsx}' --fix"
+    ]
+  },
+  "next-unused": {
+    "alias": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    "debug": true,
+    "include": [
+      "components",
+      "lib",
+      "pages",
+      "utils"
+    ],
+    "exclude": [],
+    "entrypoints": [
+      "pages"
+    ]
+  }
+}

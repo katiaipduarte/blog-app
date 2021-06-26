@@ -1,0 +1,21 @@
+{
+    "testEnvironment": "jsdom",
+    "testPathIgnorePatterns": ["/node_modules/", "/.next/"],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/components/**/*.ts(x)?",
+      "<rootDir>/lib/**/*.ts(x)?",
+      "<rootDir>/store/**/*.ts(x)?",
+      "<rootDir>/utils/**/*.ts(x)?"
+    ],
+    "setupFilesAfterEnv": ["<rootDir>/.jest/setup.ts"],
+    "modulePaths": ["<rootDir>", "<rootDir>/.jest"],
+    "moduleNameMapper": {
+      "@components/(.*)$": "<rootDir>/components/$1",
+      "@constants/(.*)$": "<rootDir>/constants/$1",
+      "@entities/(.*)$": "<rootDir>/entities/$1",
+      "@lib/(.*)$": ["<rootDir>/lib/$1"],
+      "@store/(.*)$": "<rootDir>/store/$1",
+      "@utils/(.*)$": ["<rootDir>/utils/$1"]
+    }
+  }
