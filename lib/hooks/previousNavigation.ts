@@ -2,9 +2,9 @@ import Router from 'next/router';
 import { useEffect } from 'react';
 
 export const PreviousNavigation = () => {
-  const cachedScrollPositions: Array<any> = [];
-
   useEffect(() => {
+    const cachedScrollPositions: Array<any> = [];
+
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
       let shouldScrollRestore: any;
