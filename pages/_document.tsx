@@ -1,4 +1,4 @@
-import { getLangFromReq } from '@utils/from-req';
+import { getLangFromReq } from '@utils/fromReq';
 import Document, {
   DocumentContext,
   Head,
@@ -26,11 +26,6 @@ class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
           <meta name="theme-color" content="#FFFFFF" />
-          <meta name="keywords" content="" />
-          <meta property="og:site_name" content="nextjs-boilerplate" />
-          <meta property="og:locale" content={this.props.locale} />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="" />
         </Head>
         <body>
           <Main />

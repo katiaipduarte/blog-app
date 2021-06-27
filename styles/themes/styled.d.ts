@@ -13,5 +13,6 @@ declare module 'styled-components' {
     background: string;
     primaryColor: string;
     secondaryColor: string;
+    grey: string;
   }
 }

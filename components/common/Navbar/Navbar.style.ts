@@ -28,6 +28,7 @@ export const NavbarContainer = styled.nav`
     .logo {
       font-size: 2rem;
       padding: 0.75rem 1rem 0.75rem 0;
+      color: ${({ theme }) => theme.primaryColor};
     }
 
     .item {
@@ -91,6 +92,7 @@ export const NavbarContainer = styled.nav`
       .theme-toggle {
         order: 2;
         display: inherit;
+        padding: 1rem;
       }
     }
   }

@@ -16,10 +16,7 @@ export const CustomErrorContainer = styled.div`
   }
 
   .message {
-    h4 {
-      font-size: 1.25rem;
-      line-height: 1.5rem;
-      font-weight: 600;
+    h2 {
       margin-bottom: 1rem;
     }
 
@@ -34,7 +31,6 @@ export const CustomErrorContainer = styled.div`
     }
   }
 
-  /* Tablet menu */
   @media all and (min-width: 700px) {
     justify-content: center;
     align-items: center;
@@ -54,9 +50,7 @@ export const CustomErrorContainer = styled.div`
       max-width: 28rem;
       padding: 0 1.5rem;
 
-      h4 {
-        font-size: 1.5rem;
-        line-height: 2rem;
+      h2 {
         margin-bottom: 2rem;
       }
 

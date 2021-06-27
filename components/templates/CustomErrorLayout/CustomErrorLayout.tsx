@@ -19,13 +19,17 @@ const CustomErrorLayout = (props: Props): JSX.Element => {
         </h1>
       </div>
       <div className="message">
-        <h4 tabIndex={0}>{message}</h4>
+        <h2 tabIndex={0}>{message}</h2>
         <p role="text" tabIndex={0}>
           Don't worry just click on the following button and you can go back to
           our homepage!
         </p>
         <Link href="/">
-          <button aria-label="Go back to homepage" type="button">
+          <button
+            className="full"
+            aria-label="Go back to homepage"
+            type="button"
+          >
             Go back to homepage.{' '}
           </button>
         </Link>

@@ -6,5 +6,6 @@ export const darkTheme: DefaultTheme = {
   toggleBorder: '#6B8096',
   background: '#0d1117',
   primaryColor: '#f78166',
-  secondaryColor: '#79c0ff'
+  secondaryColor: '#79c0ff',
+  grey: '#666666'
 };

@@ -3,6 +3,10 @@ import { ResetCSS } from './reset-css';
 
 export const GlobalStyle = createGlobalStyle`
   ${ResetCSS}
+  
+  * {
+    box-sizing: border-box;
+  }
 
   body {
     background: ${({ theme }) => theme.body};
@@ -20,24 +24,44 @@ export const GlobalStyle = createGlobalStyle`
       cursor: default;
       letter-spacing: 0.05rem;
     }
-  
-    * {
-      box-sizing: border-box;
+
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      font-weight: 600;
     }
   
     button {
-      background-color: ${({ theme }) => theme.primaryColor};
       border-color: transparent;
       border-radius: 0.5rem;
       border-width: 1px;
-      color: white;
       transition-duration: 0.15s;
-      padding: 1rem;
       opacity: 0.9;
+      font-weight: 500;
   
       &:hover {
         opacity: 1;
       }
+
+      &.full {
+        background-color: ${({ theme }) => theme.primaryColor};
+        color: white;
+        padding: 1rem;
+      }
+
+      &.transparent {
+        color: ${({ theme }) => theme.secondaryColor};
+        background-color: transparent;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media all and (min-width: 700px) {
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
   }
 `;

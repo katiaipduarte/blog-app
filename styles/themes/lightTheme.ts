@@ -6,5 +6,6 @@ export const lightTheme: DefaultTheme = {
   toggleBorder: '#FFF',
   background: 'linear-gradient(#39598A, #79D7ED)',
   primaryColor: '#f78166',
-  secondaryColor: '#79c0ff'
+  secondaryColor: '#79c0ff',
+  grey: '#666666'
 };
