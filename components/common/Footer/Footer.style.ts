@@ -15,6 +15,7 @@ export const FooterContainer = styled.footer`
       a {
         svg {
           height: 1.25rem;
+          font-size: 1.25rem;
           margin: 0 0.75rem;
         }
         &:hover {

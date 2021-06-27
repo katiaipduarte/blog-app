@@ -21,6 +21,7 @@ export const NavbarContainer = styled.nav`
       a {
         svg {
           height: 2rem;
+          font-size: 2rem;
         }
       }
     }

@@ -7,5 +7,5 @@ export const darkTheme: DefaultTheme = {
   background: '#0d1117',
   primaryColor: '#f78166',
   secondaryColor: '#79c0ff',
-  grey: '#666666'
+  grey: '#D9D9D9'
 };
