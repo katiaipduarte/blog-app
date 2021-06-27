@@ -41,7 +41,7 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
   const slugParameter = ctx.params?.slug ?? '';
 
   const postReq = await fetch(
-    `${process.env.NEXT_PUBLIC_API_ENDPOINT}/posts/1`
+    `${process.env.NEXT_PUBLIC_API_ENDPOINT}/posts/${slugParameter[0]}`
   );
 
   if (postReq.status >= 400) {
@@ -58,7 +58,7 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
     const post = await postReq.json();
 
     const commentsReq = await fetch(
-      `${process.env.NEXT_PUBLIC_API_ENDPOINT}/posts/1/comments`
+      `${process.env.NEXT_PUBLIC_API_ENDPOINT}/posts/${slugParameter[0]}/comments`
     );
     const comments = await commentsReq.json();
 

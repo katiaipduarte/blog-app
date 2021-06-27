@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react';
+import React, { memo, useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { ListContainer } from './ListLayout.style';
@@ -7,6 +7,7 @@ import { Post } from '@interfaces/post';
 import SearchBar from '@components/ui/SearchBar/SearchBar';
 import { useFetch } from '@lib/hooks/useFetch';
 import { sortByDate } from '@utils/sortByDate';
+import { PostsContext } from '@lib/context/posts';
 
 type Props = {
   homepage: boolean;
@@ -14,19 +15,18 @@ type Props = {
 
 const ListLayout = (props: Props): JSX.Element => {
   const { homepage } = props;
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [postList, setPostList] = useState<Post[]>([]);
   const [term, setTerm] = useState<string>('');
-
-  const req = useFetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/posts`);
+  const { loading, posts } = useContext(PostsContext);
 
   useEffect(() => {
-    if (req.status === 'fetched') {
-      setPosts(sortByDate(req.data));
+    if (!loading) {
+      setPostList(posts);
     }
-  }, [req]);
+  }, [loading, posts]);
 
   const renderContent = (): JSX.Element => {
-    if (posts.length === 0) {
+    if (postList.length === 0) {
       return (
         <li>
           <h2>No posts found.</h2>
@@ -44,7 +44,7 @@ const ListLayout = (props: Props): JSX.Element => {
 
     return (
       <>
-        {posts
+        {postList
           .filter((post: Post) => {
             return post.title.toLowerCase().includes(term.toLowerCase());
           })
@@ -74,7 +74,7 @@ const ListLayout = (props: Props): JSX.Element => {
                     <div className="description">
                       <h2 role="button">
                         <Link
-                          href={`/blog/${post.slug}`}
+                          href={`/blog/${post.id}/${post.slug}`}
                           aria-label={`Read "${post.title}"`}
                         >
                           {post.title}
@@ -86,7 +86,7 @@ const ListLayout = (props: Props): JSX.Element => {
                     </div>
                     {homepage && (
                       <Link
-                        href={`/blog/${post.slug}`}
+                        href={`/blog/${post.id}/${post.slug}`}
                         aria-label={`Read more about "${post.title}"`}
                       >
                         <button className="transparent" role="button">
