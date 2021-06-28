@@ -1,15 +1,32 @@
 import { Post } from '@interfaces/post';
-import React from 'react';
+import React, { memo, useContext, useEffect, useState } from 'react';
 import { PostContainer } from './PostLayout.style';
 import Link from 'next/link';
+import { PostsContext } from '@lib/context/posts';
+import Comments from '@components/ui/Comments/Comments';
+import { PostComment } from '@interfaces/postComment';
 
 type Props = {
   post: Post;
-  comments: Comment[];
+  comments: PostComment[];
 };
 
 const PostLayout = (props: Props): JSX.Element => {
   const { post, comments } = props;
+  const { loading, posts } = useContext(PostsContext);
+  const [next, setNext] = useState<Post>();
+  const [prev, setPrev] = useState<Post>();
+
+  useEffect(() => {
+    if (!loading) {
+      if (post.id !== 1) {
+        setNext(posts.find(i => i.id === post.id - 1));
+      }
+      if (post.id !== posts.length) {
+        setPrev(posts.find(i => i.id === post.id + 1));
+      }
+    }
+  }, [loading, post.id, posts]);
 
   const date = new Date(post.publish_date).toLocaleDateString('en', {
     weekday: 'long',
@@ -34,7 +51,7 @@ const PostLayout = (props: Props): JSX.Element => {
         </dl>
         <h1>{post.title}</h1>
       </header>
-      <div className="post" style={{ gridTemplateRows: 'auto 1fr' }}>
+      <div className="post">
         <dl
           className="author"
           aria-label={`Post written by ${post.author}`}
@@ -48,34 +65,41 @@ const PostLayout = (props: Props): JSX.Element => {
           tabIndex={0}
           role="text"
         ></div>
+        <Comments comments={comments} postId={post.id} />
         <footer>
-          {/* {(next || prev) && (
-              <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
-                {prev && (
-                  <div>
-                    <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                      Previous Article
-                    </h2>
-                    <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                      <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
-                    </div>
-                  </div>
-                )}
-                {next && (
-                  <div>
-                    <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                      Next Article
-                    </h2>
-                    <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                      <Link href={`/blog/${next.slug}`}>{next.title}</Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-            )} */}
+          {(next || prev) && (
+            <div className="other-articles">
+              {prev && (
+                <div className="previous-article">
+                  <h2>Previous Article</h2>
+                  <Link
+                    href={`/blog/${prev.slug}`}
+                    aria-label={`Read ${prev.title} article`}
+                  >
+                    <button className="transparent" role="button">
+                      {prev.title}
+                    </button>
+                  </Link>
+                </div>
+              )}
+              {next && (
+                <div className="next-article">
+                  <h2>Next Article</h2>
+                  <Link
+                    href={`/blog/${next.slug}`}
+                    aria-label={`Read ${next.title} article`}
+                  >
+                    <button className="transparent" role="button">
+                      {next.title}
+                    </button>
+                  </Link>
+                </div>
+              )}
+            </div>
+          )}
 
           <Link href={`/blog`} aria-label={`Go back to the blog`}>
-            <button className="transparent" role="button">
+            <button className="transparent go-back" role="button">
               &larr; Back to the blog
             </button>
           </Link>
@@ -85,4 +109,4 @@ const PostLayout = (props: Props): JSX.Element => {
   );
 };
 
-export default PostLayout;
+export default memo(PostLayout);

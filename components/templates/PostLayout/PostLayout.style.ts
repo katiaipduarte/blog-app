@@ -26,7 +26,6 @@ export const PostContainer = styled.article`
 
   .post {
     padding-bottom: 2rem;
-    grid-template-rows: auto 1fr;
     .author {
       padding: 2rem 0;
       border-bottom: 1px solid ${({ theme }) => theme.text};
@@ -54,8 +53,28 @@ export const PostContainer = styled.article`
       text-align: justify;
       padding-top: 2rem;
 
-      button {
+      .other-articles {
+        display: flex;
+        justify-content: space-between;
+        .previous-article,
+        .next-article {
+          padding-bottom: 1rem;
+          h2 {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            color: ${({ theme }) => theme.grey};
+            text-transform: uppercase;
+          }
+          button {
+            padding-top: 0rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .go-back {
         padding-top: 1rem;
+        float: right;
       }
     }
   }

@@ -1,4 +1,4 @@
-export type Comment = {
+export type PostComment = {
   content: string;
   date: string;
   id: number;

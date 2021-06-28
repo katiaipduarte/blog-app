@@ -5,8 +5,6 @@ import { ListContainer } from './ListLayout.style';
 import { BlogConfiguration } from '@constants/blogConfiguration';
 import { Post } from '@interfaces/post';
 import SearchBar from '@components/ui/SearchBar/SearchBar';
-import { useFetch } from '@lib/hooks/useFetch';
-import { sortByDate } from '@utils/sortByDate';
 import { PostsContext } from '@lib/context/posts';
 
 type Props = {

@@ -6,11 +6,12 @@ import { Post } from '@interfaces/post';
 import { urlRedirectHandler } from '@utils/urlRedirectHandler';
 import { BlogSeo } from '@lib/seo/BlogSeo';
 import PostLayout from '@components/templates/PostLayout/PostLayout';
+import { PostComment } from '@interfaces/postComment';
 
 type Props = {
   notFound: boolean;
   post: Post;
-  comments: Comment[];
+  comments: PostComment[];
 };
 
 const PostPage = (props: Props): JSX.Element => {
