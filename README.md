@@ -16,7 +16,6 @@ App created using [Next.js 11](https://nextjs.org/), [TypeScript](https://www.ty
 - [License](#license)
 - [Folder Structure](#folder-structure)
 - [Environment variables](#environment-variables)
-- [Browser plugins](#browser-plugins)
 - [Available Scripts](#available-scripts)
   - [npm run install:npm](#npm-run-installnpm)
   - [npm run dev](#npm-run-dev)
