@@ -948,14 +948,6 @@ exports[`the <PostLayout /> component should render Post with comments 1`] = `
                 bananan 2x
               </p>
             </div>
-            <button
-              className="full"
-              onClick={[Function]}
-              onKeyPress={[Function]}
-              role="button"
-            >
-              Reply
-            </button>
           </div>
         </li>
         <li />

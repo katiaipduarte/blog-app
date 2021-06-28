@@ -358,14 +358,6 @@ exports[`the <Comments /> component should render comments list 1`] = `
             bananan 2x
           </p>
         </div>
-        <button
-          className="full"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          role="button"
-        >
-          Reply
-        </button>
       </div>
     </li>
     <li />
