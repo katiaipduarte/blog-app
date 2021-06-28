@@ -1,11 +1,11 @@
-import React, { ChangeEvent, FormEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent, memo, useState } from 'react';
 import { CommentFormContainer } from './CommentForm.style';
 
 type Props = {
   postId: number;
   parentCommentId: number | null;
   user: string;
-  commentAdded: () => void;
+  commentAdded: () => Promise<void>;
 };
 
 const CommentForm = (props: Props): JSX.Element => {
@@ -61,6 +61,8 @@ const CommentForm = (props: Props): JSX.Element => {
           content: '',
           user: ''
         });
+
+        commentAdded();
       })
       .catch(() => {
         console.error('something went wrong while adding a comment');
@@ -104,4 +106,4 @@ const CommentForm = (props: Props): JSX.Element => {
   );
 };
 
-export default CommentForm;
+export default memo(CommentForm);

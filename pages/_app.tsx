@@ -25,7 +25,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 
   useEffect(() => {
     if (req.status === 'fetched') {
-      setPosts(sortByDate(req.data));
+      setPosts(sortByDate(req.data as Post[]));
       setLoading(false);
     }
   }, [req]);

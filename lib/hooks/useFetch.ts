@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Post } from '@interfaces/post';
+import { PostComment } from '@interfaces/postComment';
 
 export const useFetch = (url: string) => {
   const [status, setStatus] = useState<string>('idle');
-  const [data, setData] = useState<Post[]>([]);
+  const [data, setData] = useState<Post[] | PostComment[]>([]);
 
   useEffect(() => {
     if (!url) return;

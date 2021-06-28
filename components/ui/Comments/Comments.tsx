@@ -1,4 +1,5 @@
 import { PostComment } from '@interfaces/postComment';
+import { useFetch } from '@lib/hooks/useFetch';
 import React, { memo, useState } from 'react';
 import CommentForm from '../CommentForm/CommentForm';
 import { CommentsContainer } from './Comments.style';
@@ -12,11 +13,12 @@ const Comments = (props: Props): JSX.Element => {
   const { comments, postId } = props;
   const [parentId, setParentId] = useState<number | null>(null);
   const [parentUser, setParentUser] = useState<string>('');
+  const [commentList, setCommentList] = useState<PostComment[]>(comments);
 
   const renderComments = (): JSX.Element => {
     return (
       <ul>
-        {comments.map((comment: PostComment) => (
+        {commentList.map((comment: PostComment) => (
           <li key={comment.id}>
             {!comment.parent_id && buildParentComments(comment)}
             {buildChildrenComments(comment.id, comment.user)}
@@ -78,9 +80,15 @@ const Comments = (props: Props): JSX.Element => {
     setParentUser(user);
   };
 
-  const commentAdded = (): void => {
+  const commentAdded = async (): Promise<void> => {
     setParentId(null);
-    debugger;
+    setParentUser('');
+
+    const commentsReq = await fetch(
+      `${process.env.NEXT_PUBLIC_API_ENDPOINT}/posts/${postId}/comments`
+    );
+    const comments = await commentsReq.json();
+    setCommentList(comments);
   };
 
   return (
