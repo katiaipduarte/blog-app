@@ -54,7 +54,7 @@ const Comments = (props: Props): JSX.Element => {
   const buildChildrenComments = (id: number, user: string): JSX.Element => {
     return (
       <>
-        {comments
+        {commentList
           .filter((i: PostComment) => i.parent_id === id)
           .map((comment: PostComment) => {
             return (
@@ -68,15 +68,6 @@ const Comments = (props: Props): JSX.Element => {
                     {comment.content}
                   </p>
                 </div>
-
-                <button
-                  role="button"
-                  className="full"
-                  onClick={() => handleReply(comment.id, comment.user)}
-                  onKeyPress={() => handleReply(comment.id, comment.user)}
-                >
-                  Reply
-                </button>
               </div>
             );
           })}
@@ -87,6 +78,12 @@ const Comments = (props: Props): JSX.Element => {
   const handleReply = (parentCommentId: number, user: string): void => {
     setParentId(parentCommentId);
     setParentUser(user);
+
+    const userInput = document.querySelector('#user');
+
+    if (userInput) {
+      (userInput as HTMLInputElement).focus();
+    }
   };
 
   const commentAdded = async (): Promise<void> => {
@@ -102,7 +99,7 @@ const Comments = (props: Props): JSX.Element => {
 
   return (
     <CommentsContainer>
-      <h2 tabIndex={0} role="text">{`${comments.length} Comments`}</h2>
+      <h2 tabIndex={0} role="text">{`${commentList.length} Comments`}</h2>
       {renderComments()}
       <CommentForm
         postId={postId}
