@@ -2,6 +2,8 @@
 import React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
 import SearchBar from './SearchBar';
+import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 
 describe('<SearchBar /> component Unit Test', () => {
   let component: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
@@ -10,6 +12,13 @@ describe('<SearchBar /> component Unit Test', () => {
     component = mount(
       <SearchBar find={jest.fn().mockName('mockedFunction')} />
     );
+  });
+
+  it('should render Searchbar', () => {
+    const tree = renderer
+      .create(<SearchBar find={jest.fn().mockName('mockedFunction')} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it('should render 1 <SearchBar /> component', () => {

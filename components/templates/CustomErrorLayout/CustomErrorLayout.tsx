@@ -30,7 +30,7 @@ const CustomErrorLayout = (props: Props): JSX.Element => {
             aria-label="Go back to homepage"
             type="button"
           >
-            Go back to homepage.{' '}
+            Go back to homepage.
           </button>
         </Link>
       </div>

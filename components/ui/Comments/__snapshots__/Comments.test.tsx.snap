@@ -1,0 +1,419 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the <Comments /> component should render 0 comments 1`] = `
+.c1 {
+  margin: 2rem auto;
+}
+
+.c1 p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.c1 div {
+  margin: 2rem 0;
+}
+
+.c1 div input[type='text'],
+.c1 div textarea {
+  width: 100% !important;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+  padding: 0.5rem;
+  display: block;
+}
+
+.c1 div input[type='text']:focus-visible,
+.c1 div textarea:focus-visible,
+.c1 div input[type='text']:focus:not(:focus-visible),
+.c1 div textarea:focus:not(:focus-visible) {
+  outline: none;
+  border: 2px solid;
+}
+
+.c1 div input[type='text'] {
+  height: 2rem;
+}
+
+.c1 div textarea {
+  height: 10rem !important;
+  resize: none;
+}
+
+.c1 div .invalid {
+  border: 2px solid !important;
+}
+
+.c1 div .message {
+  font-size: 0.75rem;
+  display: none;
+}
+
+.c1 div .show {
+  display: block !important;
+}
+
+.c0 {
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.c0 ul {
+  margin: 2rem 0;
+}
+
+.c0 ul li {
+  margin: 1rem 0;
+}
+
+.c0 ul li h4 {
+  font-size: 0.75rem;
+}
+
+.c0 ul li p {
+  margin-top: 0.25rem;
+  font-size: 0.5rem;
+}
+
+.c0 ul li .parent,
+.c0 ul li .child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 ul li .child {
+  width: calc(100% - 1.5rem);
+  paddding: 2rem 0;
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+@media all and (min-width:960px) {
+  .c1 {
+    text-align: left;
+  }
+
+  .c1 div input[type='text'],
+  .c1 div textarea {
+    width: 70% !important;
+  }
+}
+
+@media all and (min-width:960px) {
+  .c0 ul li h4 {
+    font-size: 0.8rem;
+  }
+
+  .c0 ul li p {
+    margin-top: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .c0 ul li .child {
+    max-width: 30rem;
+    paddding: 2rem 0;
+    margin: 1rem 0 1rem 3.5rem;
+  }
+}
+
+<section
+  className="c0"
+>
+  <h2
+    role="text"
+    tabIndex={0}
+  >
+    0 Comments
+  </h2>
+  <ul />
+  <form
+    className="c1"
+    onSubmit={[Function]}
+  >
+    <h2>
+      Submit a comment
+    </h2>
+    
+    <div>
+      <input
+        className=""
+        id="user"
+        onChange={[Function]}
+        placeholder="Username"
+        type="text"
+        value=""
+      />
+      <span
+        className="message"
+      >
+        Username cannot be empty
+      </span>
+    </div>
+    <div>
+      <textarea
+        className=""
+        id="content"
+        name="comment"
+        onChange={[Function]}
+        placeholder="Write your comment here..."
+        value=""
+      />
+      <span
+        className="message"
+      >
+        Comment cannot be empty
+      </span>
+    </div>
+    <button
+      className="full"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</section>
+`;
+
+exports[`the <Comments /> component should render comments list 1`] = `
+.c1 {
+  margin: 2rem auto;
+}
+
+.c1 p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.c1 div {
+  margin: 2rem 0;
+}
+
+.c1 div input[type='text'],
+.c1 div textarea {
+  width: 100% !important;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+  padding: 0.5rem;
+  display: block;
+}
+
+.c1 div input[type='text']:focus-visible,
+.c1 div textarea:focus-visible,
+.c1 div input[type='text']:focus:not(:focus-visible),
+.c1 div textarea:focus:not(:focus-visible) {
+  outline: none;
+  border: 2px solid;
+}
+
+.c1 div input[type='text'] {
+  height: 2rem;
+}
+
+.c1 div textarea {
+  height: 10rem !important;
+  resize: none;
+}
+
+.c1 div .invalid {
+  border: 2px solid !important;
+}
+
+.c1 div .message {
+  font-size: 0.75rem;
+  display: none;
+}
+
+.c1 div .show {
+  display: block !important;
+}
+
+.c0 {
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.c0 ul {
+  margin: 2rem 0;
+}
+
+.c0 ul li {
+  margin: 1rem 0;
+}
+
+.c0 ul li h4 {
+  font-size: 0.75rem;
+}
+
+.c0 ul li p {
+  margin-top: 0.25rem;
+  font-size: 0.5rem;
+}
+
+.c0 ul li .parent,
+.c0 ul li .child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 ul li .child {
+  width: calc(100% - 1.5rem);
+  paddding: 2rem 0;
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+@media all and (min-width:960px) {
+  .c1 {
+    text-align: left;
+  }
+
+  .c1 div input[type='text'],
+  .c1 div textarea {
+    width: 70% !important;
+  }
+}
+
+@media all and (min-width:960px) {
+  .c0 ul li h4 {
+    font-size: 0.8rem;
+  }
+
+  .c0 ul li p {
+    margin-top: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .c0 ul li .child {
+    max-width: 30rem;
+    paddding: 2rem 0;
+    margin: 1rem 0 1rem 3.5rem;
+  }
+}
+
+<section
+  className="c0"
+>
+  <h2
+    role="text"
+    tabIndex={0}
+  >
+    2 Comments
+  </h2>
+  <ul>
+    <li>
+      <div
+        className="parent"
+      >
+        <div>
+          <h4
+            role="text"
+            tabIndex={0}
+          >
+            test on 2021-06-28
+          </h4>
+          <p
+            role="text"
+            tabIndex={0}
+          >
+            banana
+          </p>
+        </div>
+        <button
+          className="full"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+        >
+          Reply
+        </button>
+      </div>
+      <div
+        className="child"
+      >
+        <div>
+          <h4
+            role="text"
+            tabIndex={0}
+          >
+            yolo response to test on 2021-06-28
+          </h4>
+          <p
+            role="text"
+            tabIndex={0}
+          >
+            bananan 2x
+          </p>
+        </div>
+        <button
+          className="full"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+        >
+          Reply
+        </button>
+      </div>
+    </li>
+    <li />
+  </ul>
+  <form
+    className="c1"
+    onSubmit={[Function]}
+  >
+    <h2>
+      Submit a comment
+    </h2>
+    
+    <div>
+      <input
+        className=""
+        id="user"
+        onChange={[Function]}
+        placeholder="Username"
+        type="text"
+        value=""
+      />
+      <span
+        className="message"
+      >
+        Username cannot be empty
+      </span>
+    </div>
+    <div>
+      <textarea
+        className=""
+        id="content"
+        name="comment"
+        onChange={[Function]}
+        placeholder="Write your comment here..."
+        value=""
+      />
+      <span
+        className="message"
+      >
+        Comment cannot be empty
+      </span>
+    </div>
+    <button
+      className="full"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</section>
+`;

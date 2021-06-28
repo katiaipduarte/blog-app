@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the <CommentForm /> component should render comment form to add a comment to post 1`] = `
+.c0 {
+  margin: 2rem auto;
+}
+
+.c0 p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.c0 div {
+  margin: 2rem 0;
+}
+
+.c0 div input[type='text'],
+.c0 div textarea {
+  width: 100% !important;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+  padding: 0.5rem;
+  display: block;
+}
+
+.c0 div input[type='text']:focus-visible,
+.c0 div textarea:focus-visible,
+.c0 div input[type='text']:focus:not(:focus-visible),
+.c0 div textarea:focus:not(:focus-visible) {
+  outline: none;
+  border: 2px solid;
+}
+
+.c0 div input[type='text'] {
+  height: 2rem;
+}
+
+.c0 div textarea {
+  height: 10rem !important;
+  resize: none;
+}
+
+.c0 div .invalid {
+  border: 2px solid !important;
+}
+
+.c0 div .message {
+  font-size: 0.75rem;
+  display: none;
+}
+
+.c0 div .show {
+  display: block !important;
+}
+
+@media all and (min-width:960px) {
+  .c0 {
+    text-align: left;
+  }
+
+  .c0 div input[type='text'],
+  .c0 div textarea {
+    width: 70% !important;
+  }
+}
+
+<form
+  className="c0"
+  onSubmit={[Function]}
+>
+  <h2>
+    Submit a comment
+  </h2>
+  
+  <div>
+    <input
+      className=""
+      id="user"
+      onChange={[Function]}
+      placeholder="Username"
+      type="text"
+      value=""
+    />
+    <span
+      className="message"
+    >
+      Username cannot be empty
+    </span>
+  </div>
+  <div>
+    <textarea
+      className=""
+      id="content"
+      name="comment"
+      onChange={[Function]}
+      placeholder="Write your comment here..."
+      value=""
+    />
+    <span
+      className="message"
+    >
+      Comment cannot be empty
+    </span>
+  </div>
+  <button
+    className="full"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`the <CommentForm /> component should render comment form to reply to a comment 1`] = `
+.c0 {
+  margin: 2rem auto;
+}
+
+.c0 p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.c0 div {
+  margin: 2rem 0;
+}
+
+.c0 div input[type='text'],
+.c0 div textarea {
+  width: 100% !important;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+  padding: 0.5rem;
+  display: block;
+}
+
+.c0 div input[type='text']:focus-visible,
+.c0 div textarea:focus-visible,
+.c0 div input[type='text']:focus:not(:focus-visible),
+.c0 div textarea:focus:not(:focus-visible) {
+  outline: none;
+  border: 2px solid;
+}
+
+.c0 div input[type='text'] {
+  height: 2rem;
+}
+
+.c0 div textarea {
+  height: 10rem !important;
+  resize: none;
+}
+
+.c0 div .invalid {
+  border: 2px solid !important;
+}
+
+.c0 div .message {
+  font-size: 0.75rem;
+  display: none;
+}
+
+.c0 div .show {
+  display: block !important;
+}
+
+@media all and (min-width:960px) {
+  .c0 {
+    text-align: left;
+  }
+
+  .c0 div input[type='text'],
+  .c0 div textarea {
+    width: 70% !important;
+  }
+}
+
+<form
+  className="c0"
+  onSubmit={[Function]}
+>
+  <h2>
+    Submit a comment
+  </h2>
+  <p>
+    Reply to test
+  </p>
+  <div>
+    <input
+      className=""
+      id="user"
+      onChange={[Function]}
+      placeholder="Username"
+      type="text"
+      value=""
+    />
+    <span
+      className="message"
+    >
+      Username cannot be empty
+    </span>
+  </div>
+  <div>
+    <textarea
+      className=""
+      id="content"
+      name="comment"
+      onChange={[Function]}
+      placeholder="Write your comment here..."
+      value=""
+    />
+    <span
+      className="message"
+    >
+      Comment cannot be empty
+    </span>
+  </div>
+  <button
+    className="full"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;

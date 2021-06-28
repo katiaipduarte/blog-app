@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the <CustomErrorLayout /> component should render custom error layout with code and message 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 .http-code {
+  padding: 2rem 0;
+}
+
+.c0 .http-code h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 2.25rem;
+}
+
+.c0 .message h2 {
+  margin-bottom: 1rem;
+}
+
+.c0 .message p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.c0 .message button {
+  display: block;
+  margin: 0 auto;
+}
+
+@media all and (min-width:700px) {
+  .c0 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 6rem;
+  }
+
+  .c0 .http-code h1 {
+    font-size: 6rem;
+    line-height: 3rem;
+    border-right: 2px solid;
+    padding: 0 1.5rem;
+  }
+
+  .c0 .message {
+    max-width: 28rem;
+    padding: 0 1.5rem;
+  }
+
+  .c0 .message h2 {
+    margin-bottom: 2rem;
+  }
+
+  .c0 .message button {
+    margin: 0;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="http-code"
+  >
+    <h1
+      aria-label="Error 404"
+      tabIndex={0}
+    >
+      404
+    </h1>
+  </div>
+  <div
+    className="message"
+  >
+    <h2
+      tabIndex={0}
+    >
+      Unit test
+    </h2>
+    <p
+      role="text"
+      tabIndex={0}
+    >
+      Don't worry just click on the following button and you can go back to our homepage!
+    </p>
+    <button
+      aria-label="Go back to homepage"
+      className="full"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      type="button"
+    >
+      Go back to homepage.
+    </button>
+  </div>
+</div>
+`;

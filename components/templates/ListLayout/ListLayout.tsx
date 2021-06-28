@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { ListContainer } from './ListLayout.style';
 import { BlogConfiguration } from '@constants/blogConfiguration';
 import { Post } from '@interfaces/post';
-import SearchBar from '@components/ui/SearchBar/SearchBar';
 import { PostsContext } from '@lib/context/posts';
+import SearchBar from '@components/ui/SearchBar/SearchBar';
 
 type Props = {
   homepage: boolean;

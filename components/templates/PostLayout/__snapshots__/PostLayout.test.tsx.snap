@@ -1,0 +1,1021 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the <PostLayout /> component should render Post empty 1`] = `
+.c0 {
+  padding: 0 1rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.c0 header {
+  padding-top: 1.5rem;
+}
+
+.c0 header dl dd {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.c0 header h1 {
+  line-height: 2.25rem;
+  font-size: 1.875rem;
+  font-weight: 800;
+}
+
+.c0 .post {
+  padding-bottom: 2rem;
+}
+
+.c0 .post .author {
+  padding: 2rem 0;
+  border-bottom: 1px solid;
+}
+
+.c0 .post .author dd {
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1.25rem;
+}
+
+.c0 .post .content {
+  padding: 2rem 0;
+  text-align: justify;
+  border-bottom: 1px solid;
+}
+
+.c0 .post .content p {
+  margin: 1.25em 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.c0 .post footer {
+  text-align: justify;
+  padding-top: 2rem;
+}
+
+.c0 .post footer .other-articles {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 .post footer .other-articles .previous-article,
+.c0 .post footer .other-articles .next-article {
+  padding-bottom: 1rem;
+}
+
+.c0 .post footer .other-articles .previous-article h2,
+.c0 .post footer .other-articles .next-article h2 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.c0 .post footer .other-articles .previous-article button,
+.c0 .post footer .other-articles .next-article button {
+  padding-top: 0rem;
+  text-transform: capitalize;
+}
+
+.c0 .post footer .go-back {
+  padding-top: 1rem;
+  float: right;
+}
+
+.c2 {
+  margin: 2rem auto;
+}
+
+.c2 p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.c2 div {
+  margin: 2rem 0;
+}
+
+.c2 div input[type='text'],
+.c2 div textarea {
+  width: 100% !important;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+  padding: 0.5rem;
+  display: block;
+}
+
+.c2 div input[type='text']:focus-visible,
+.c2 div textarea:focus-visible,
+.c2 div input[type='text']:focus:not(:focus-visible),
+.c2 div textarea:focus:not(:focus-visible) {
+  outline: none;
+  border: 2px solid;
+}
+
+.c2 div input[type='text'] {
+  height: 2rem;
+}
+
+.c2 div textarea {
+  height: 10rem !important;
+  resize: none;
+}
+
+.c2 div .invalid {
+  border: 2px solid !important;
+}
+
+.c2 div .message {
+  font-size: 0.75rem;
+  display: none;
+}
+
+.c2 div .show {
+  display: block !important;
+}
+
+.c1 {
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.c1 ul {
+  margin: 2rem 0;
+}
+
+.c1 ul li {
+  margin: 1rem 0;
+}
+
+.c1 ul li h4 {
+  font-size: 0.75rem;
+}
+
+.c1 ul li p {
+  margin-top: 0.25rem;
+  font-size: 0.5rem;
+}
+
+.c1 ul li .parent,
+.c1 ul li .child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 ul li .child {
+  width: calc(100% - 1.5rem);
+  paddding: 2rem 0;
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+@media all and (min-width:960px) {
+  .c2 {
+    text-align: left;
+  }
+
+  .c2 div input[type='text'],
+  .c2 div textarea {
+    width: 70% !important;
+  }
+}
+
+@media all and (min-width:960px) {
+  .c1 ul li h4 {
+    font-size: 0.8rem;
+  }
+
+  .c1 ul li p {
+    margin-top: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .c1 ul li .child {
+    max-width: 30rem;
+    paddding: 2rem 0;
+    margin: 1rem 0 1rem 3.5rem;
+  }
+}
+
+<article
+  className="c0"
+>
+  <header>
+    <dl>
+      <dd>
+        <time
+          aria-label="Published on Invalid Date"
+          tabIndex={0}
+        >
+          Invalid Date
+        </time>
+      </dd>
+    </dl>
+    <h1 />
+  </header>
+  <div
+    className="post"
+  >
+    <dl
+      aria-label="Post written by undefined"
+      className="author"
+      tabIndex={0}
+    >
+      <dd />
+    </dl>
+    <div
+      className="content"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+      role="text"
+      tabIndex={0}
+    />
+    <section
+      className="c1"
+    >
+      <h2
+        role="text"
+        tabIndex={0}
+      >
+        0 Comments
+      </h2>
+      <ul />
+      <form
+        className="c2"
+        onSubmit={[Function]}
+      >
+        <h2>
+          Submit a comment
+        </h2>
+        
+        <div>
+          <input
+            className=""
+            id="user"
+            onChange={[Function]}
+            placeholder="Username"
+            type="text"
+            value=""
+          />
+          <span
+            className="message"
+          >
+            Username cannot be empty
+          </span>
+        </div>
+        <div>
+          <textarea
+            className=""
+            id="content"
+            name="comment"
+            onChange={[Function]}
+            placeholder="Write your comment here..."
+            value=""
+          />
+          <span
+            className="message"
+          >
+            Comment cannot be empty
+          </span>
+        </div>
+        <button
+          className="full"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <footer>
+      <button
+        className="transparent go-back"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        role="button"
+      >
+        ← Back to the blog
+      </button>
+    </footer>
+  </div>
+</article>
+`;
+
+exports[`the <PostLayout /> component should render Post with 0 comments 1`] = `
+.c0 {
+  padding: 0 1rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.c0 header {
+  padding-top: 1.5rem;
+}
+
+.c0 header dl dd {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.c0 header h1 {
+  line-height: 2.25rem;
+  font-size: 1.875rem;
+  font-weight: 800;
+}
+
+.c0 .post {
+  padding-bottom: 2rem;
+}
+
+.c0 .post .author {
+  padding: 2rem 0;
+  border-bottom: 1px solid;
+}
+
+.c0 .post .author dd {
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1.25rem;
+}
+
+.c0 .post .content {
+  padding: 2rem 0;
+  text-align: justify;
+  border-bottom: 1px solid;
+}
+
+.c0 .post .content p {
+  margin: 1.25em 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.c0 .post footer {
+  text-align: justify;
+  padding-top: 2rem;
+}
+
+.c0 .post footer .other-articles {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 .post footer .other-articles .previous-article,
+.c0 .post footer .other-articles .next-article {
+  padding-bottom: 1rem;
+}
+
+.c0 .post footer .other-articles .previous-article h2,
+.c0 .post footer .other-articles .next-article h2 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.c0 .post footer .other-articles .previous-article button,
+.c0 .post footer .other-articles .next-article button {
+  padding-top: 0rem;
+  text-transform: capitalize;
+}
+
+.c0 .post footer .go-back {
+  padding-top: 1rem;
+  float: right;
+}
+
+.c2 {
+  margin: 2rem auto;
+}
+
+.c2 p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.c2 div {
+  margin: 2rem 0;
+}
+
+.c2 div input[type='text'],
+.c2 div textarea {
+  width: 100% !important;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+  padding: 0.5rem;
+  display: block;
+}
+
+.c2 div input[type='text']:focus-visible,
+.c2 div textarea:focus-visible,
+.c2 div input[type='text']:focus:not(:focus-visible),
+.c2 div textarea:focus:not(:focus-visible) {
+  outline: none;
+  border: 2px solid;
+}
+
+.c2 div input[type='text'] {
+  height: 2rem;
+}
+
+.c2 div textarea {
+  height: 10rem !important;
+  resize: none;
+}
+
+.c2 div .invalid {
+  border: 2px solid !important;
+}
+
+.c2 div .message {
+  font-size: 0.75rem;
+  display: none;
+}
+
+.c2 div .show {
+  display: block !important;
+}
+
+.c1 {
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.c1 ul {
+  margin: 2rem 0;
+}
+
+.c1 ul li {
+  margin: 1rem 0;
+}
+
+.c1 ul li h4 {
+  font-size: 0.75rem;
+}
+
+.c1 ul li p {
+  margin-top: 0.25rem;
+  font-size: 0.5rem;
+}
+
+.c1 ul li .parent,
+.c1 ul li .child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 ul li .child {
+  width: calc(100% - 1.5rem);
+  paddding: 2rem 0;
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+@media all and (min-width:960px) {
+  .c2 {
+    text-align: left;
+  }
+
+  .c2 div input[type='text'],
+  .c2 div textarea {
+    width: 70% !important;
+  }
+}
+
+@media all and (min-width:960px) {
+  .c1 ul li h4 {
+    font-size: 0.8rem;
+  }
+
+  .c1 ul li p {
+    margin-top: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .c1 ul li .child {
+    max-width: 30rem;
+    paddding: 2rem 0;
+    margin: 1rem 0 1rem 3.5rem;
+  }
+}
+
+<article
+  className="c0"
+>
+  <header>
+    <dl>
+      <dd>
+        <time
+          aria-label="Published on Friday, January 1, 2021"
+          dateTime="2021-01-01"
+          tabIndex={0}
+        >
+          Friday, January 1, 2021
+        </time>
+      </dd>
+    </dl>
+    <h1>
+      test
+    </h1>
+  </header>
+  <div
+    className="post"
+  >
+    <dl
+      aria-label="Post written by author"
+      className="author"
+      tabIndex={0}
+    >
+      <dd>
+        author
+      </dd>
+    </dl>
+    <div
+      className="content"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "bla",
+        }
+      }
+      role="text"
+      tabIndex={0}
+    />
+    <section
+      className="c1"
+    >
+      <h2
+        role="text"
+        tabIndex={0}
+      >
+        0 Comments
+      </h2>
+      <ul />
+      <form
+        className="c2"
+        onSubmit={[Function]}
+      >
+        <h2>
+          Submit a comment
+        </h2>
+        
+        <div>
+          <input
+            className=""
+            id="user"
+            onChange={[Function]}
+            placeholder="Username"
+            type="text"
+            value=""
+          />
+          <span
+            className="message"
+          >
+            Username cannot be empty
+          </span>
+        </div>
+        <div>
+          <textarea
+            className=""
+            id="content"
+            name="comment"
+            onChange={[Function]}
+            placeholder="Write your comment here..."
+            value=""
+          />
+          <span
+            className="message"
+          >
+            Comment cannot be empty
+          </span>
+        </div>
+        <button
+          className="full"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <footer>
+      <button
+        className="transparent go-back"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        role="button"
+      >
+        ← Back to the blog
+      </button>
+    </footer>
+  </div>
+</article>
+`;
+
+exports[`the <PostLayout /> component should render Post with comments 1`] = `
+.c0 {
+  padding: 0 1rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.c0 header {
+  padding-top: 1.5rem;
+}
+
+.c0 header dl dd {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.c0 header h1 {
+  line-height: 2.25rem;
+  font-size: 1.875rem;
+  font-weight: 800;
+}
+
+.c0 .post {
+  padding-bottom: 2rem;
+}
+
+.c0 .post .author {
+  padding: 2rem 0;
+  border-bottom: 1px solid;
+}
+
+.c0 .post .author dd {
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1.25rem;
+}
+
+.c0 .post .content {
+  padding: 2rem 0;
+  text-align: justify;
+  border-bottom: 1px solid;
+}
+
+.c0 .post .content p {
+  margin: 1.25em 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.c0 .post footer {
+  text-align: justify;
+  padding-top: 2rem;
+}
+
+.c0 .post footer .other-articles {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 .post footer .other-articles .previous-article,
+.c0 .post footer .other-articles .next-article {
+  padding-bottom: 1rem;
+}
+
+.c0 .post footer .other-articles .previous-article h2,
+.c0 .post footer .other-articles .next-article h2 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.c0 .post footer .other-articles .previous-article button,
+.c0 .post footer .other-articles .next-article button {
+  padding-top: 0rem;
+  text-transform: capitalize;
+}
+
+.c0 .post footer .go-back {
+  padding-top: 1rem;
+  float: right;
+}
+
+.c2 {
+  margin: 2rem auto;
+}
+
+.c2 p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.c2 div {
+  margin: 2rem 0;
+}
+
+.c2 div input[type='text'],
+.c2 div textarea {
+  width: 100% !important;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+  padding: 0.5rem;
+  display: block;
+}
+
+.c2 div input[type='text']:focus-visible,
+.c2 div textarea:focus-visible,
+.c2 div input[type='text']:focus:not(:focus-visible),
+.c2 div textarea:focus:not(:focus-visible) {
+  outline: none;
+  border: 2px solid;
+}
+
+.c2 div input[type='text'] {
+  height: 2rem;
+}
+
+.c2 div textarea {
+  height: 10rem !important;
+  resize: none;
+}
+
+.c2 div .invalid {
+  border: 2px solid !important;
+}
+
+.c2 div .message {
+  font-size: 0.75rem;
+  display: none;
+}
+
+.c2 div .show {
+  display: block !important;
+}
+
+.c1 {
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.c1 ul {
+  margin: 2rem 0;
+}
+
+.c1 ul li {
+  margin: 1rem 0;
+}
+
+.c1 ul li h4 {
+  font-size: 0.75rem;
+}
+
+.c1 ul li p {
+  margin-top: 0.25rem;
+  font-size: 0.5rem;
+}
+
+.c1 ul li .parent,
+.c1 ul li .child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 ul li .child {
+  width: calc(100% - 1.5rem);
+  paddding: 2rem 0;
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+@media all and (min-width:960px) {
+  .c2 {
+    text-align: left;
+  }
+
+  .c2 div input[type='text'],
+  .c2 div textarea {
+    width: 70% !important;
+  }
+}
+
+@media all and (min-width:960px) {
+  .c1 ul li h4 {
+    font-size: 0.8rem;
+  }
+
+  .c1 ul li p {
+    margin-top: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .c1 ul li .child {
+    max-width: 30rem;
+    paddding: 2rem 0;
+    margin: 1rem 0 1rem 3.5rem;
+  }
+}
+
+<article
+  className="c0"
+>
+  <header>
+    <dl>
+      <dd>
+        <time
+          aria-label="Published on Friday, January 1, 2021"
+          dateTime="2021-01-01"
+          tabIndex={0}
+        >
+          Friday, January 1, 2021
+        </time>
+      </dd>
+    </dl>
+    <h1>
+      test
+    </h1>
+  </header>
+  <div
+    className="post"
+  >
+    <dl
+      aria-label="Post written by author"
+      className="author"
+      tabIndex={0}
+    >
+      <dd>
+        author
+      </dd>
+    </dl>
+    <div
+      className="content"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "bla",
+        }
+      }
+      role="text"
+      tabIndex={0}
+    />
+    <section
+      className="c1"
+    >
+      <h2
+        role="text"
+        tabIndex={0}
+      >
+        2 Comments
+      </h2>
+      <ul>
+        <li>
+          <div
+            className="parent"
+          >
+            <div>
+              <h4
+                role="text"
+                tabIndex={0}
+              >
+                test on 2021-06-28
+              </h4>
+              <p
+                role="text"
+                tabIndex={0}
+              >
+                banana
+              </p>
+            </div>
+            <button
+              className="full"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              role="button"
+            >
+              Reply
+            </button>
+          </div>
+          <div
+            className="child"
+          >
+            <div>
+              <h4
+                role="text"
+                tabIndex={0}
+              >
+                yolo response to test on 2021-06-28
+              </h4>
+              <p
+                role="text"
+                tabIndex={0}
+              >
+                bananan 2x
+              </p>
+            </div>
+            <button
+              className="full"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              role="button"
+            >
+              Reply
+            </button>
+          </div>
+        </li>
+        <li />
+      </ul>
+      <form
+        className="c2"
+        onSubmit={[Function]}
+      >
+        <h2>
+          Submit a comment
+        </h2>
+        
+        <div>
+          <input
+            className=""
+            id="user"
+            onChange={[Function]}
+            placeholder="Username"
+            type="text"
+            value=""
+          />
+          <span
+            className="message"
+          >
+            Username cannot be empty
+          </span>
+        </div>
+        <div>
+          <textarea
+            className=""
+            id="content"
+            name="comment"
+            onChange={[Function]}
+            placeholder="Write your comment here..."
+            value=""
+          />
+          <span
+            className="message"
+          >
+            Comment cannot be empty
+          </span>
+        </div>
+        <button
+          className="full"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <footer>
+      <button
+        className="transparent go-back"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        role="button"
+      >
+        ← Back to the blog
+      </button>
+    </footer>
+  </div>
+</article>
+`;
