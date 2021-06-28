@@ -6,8 +6,6 @@ Demo at: [blog-app-liard.vercel.app](blog-app-liard.vercel.app)
 
 App created using [Next.js 11](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), [styled-components](https://styled-components.com/) and for testing [Jest](https://jestjs.io/). Thank you for using my app.
 
-For this project to run, since the deploy version is only connected to a localhost DB you need to run the API via json-server [https://github.com/LetsGetChecked/developer-challenge-api](https://github.com/LetsGetChecked/developer-challenge-api).
-
 **Note:** To run this project be sure to have a Node version installed that is 12.x or higher
 
 ## Table of Contents
@@ -34,9 +32,10 @@ For this project to run, since the deploy version is only connected to a localho
 
 To use this app, first clone from GitHub via 'git clone https://github.com/katiaipduarte/blog-app.git' at your terminal, `cd` to the new directory, then run `npm run install:npm`. Before running this project, you will need to create a `.env.local` file, with the same env as the ones in the `.env.example`. At last, run `npm run dev` to launch your http server.
 
+For this project to run you need to run the API via json-server [https://github.com/LetsGetChecked/developer-challenge-api](https://github.com/LetsGetChecked/developer-challenge-api).
+
 ## Future Work
 
-[ ] Add a deployed DB<br>
 [ ] Add more unit tests and e2e ones<br>
 [ ] Add page transition loader<br>
 [ ] Add authentication<br>

@@ -42,12 +42,7 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
   const slugParameter = ctx.params?.slug ?? '';
 
   const postReq = await fetch(
-    `${process.env.NEXT_PUBLIC_API_ENDPOINT}/posts/${slugParameter[0]}`,
-    {
-      method: 'GET',
-      mode: 'cors',
-      headers: { 'Content-Type': 'application/json' }
-    }
+    `${process.env.NEXT_PUBLIC_API_ENDPOINT}/posts/${slugParameter[0]}`
   );
 
   if (postReq.status >= 400) {
