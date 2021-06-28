@@ -1,5 +1,4 @@
 import { PostComment } from '@interfaces/postComment';
-import { useFetch } from '@lib/hooks/useFetch';
 import React, { memo, useState } from 'react';
 import CommentForm from '../CommentForm/CommentForm';
 import { CommentsContainer } from './Comments.style';
