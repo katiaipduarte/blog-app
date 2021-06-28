@@ -58,6 +58,7 @@ const PostLayout = (props: Props): JSX.Element => {
           aria-label={`Post written by ${post.author}`}
           tabIndex={0}
         >
+          <dt></dt>
           <dd>{post.author}</dd>
         </dl>
         <div

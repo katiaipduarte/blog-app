@@ -40,7 +40,11 @@ const SearchBar = (props: Props): JSX.Element => {
   };
 
   return (
-    <SearchBarContainer tabIndex={-1} role="searchbox">
+    <SearchBarContainer
+      tabIndex={-1}
+      role="searchbox"
+      aria-label="Search article by name form"
+    >
       <button
         id="search-term-btn"
         aria-label="Click to search"
@@ -52,11 +56,12 @@ const SearchBar = (props: Props): JSX.Element => {
 
       <input
         type="text"
-        placeholder="Search articles"
+        placeholder="Search article by name"
         value={searchTerm}
         maxLength={50}
         onChange={handleChange}
         role="search"
+        aria-label="Search article by name"
       />
       <button
         id="clear-search-term-btn"

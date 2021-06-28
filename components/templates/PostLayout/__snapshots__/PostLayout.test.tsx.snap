@@ -237,6 +237,7 @@ exports[`the <PostLayout /> component should render Post empty 1`] = `
       className="author"
       tabIndex={0}
     >
+      <dt />
       <dd />
     </dl>
     <div
@@ -558,6 +559,7 @@ exports[`the <PostLayout /> component should render Post with 0 comments 1`] = `
       className="author"
       tabIndex={0}
     >
+      <dt />
       <dd>
         author
       </dd>
@@ -881,6 +883,7 @@ exports[`the <PostLayout /> component should render Post with comments 1`] = `
       className="author"
       tabIndex={0}
     >
+      <dt />
       <dd>
         author
       </dd>
