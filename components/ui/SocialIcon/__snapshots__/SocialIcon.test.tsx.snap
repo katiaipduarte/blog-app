@@ -6,6 +6,7 @@ exports[`the <SocialIcon /> component should not render <SocialIcon /> because o
 
 exports[`the <SocialIcon /> component should render <SocialIcon /> correctly 1`] = `
 <a
+  aria-label="Link to github"
   href="test"
   rel="noopener noreferrer"
   role="button"

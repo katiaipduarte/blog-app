@@ -98,7 +98,6 @@ exports[`the <CustomErrorLayout /> component should render custom error layout w
       Unit test
     </h2>
     <p
-      role="text"
       tabIndex={0}
     >
       Don't worry just click on the following button and you can go back to our homepage!

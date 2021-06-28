@@ -308,7 +308,6 @@ exports[`the <ListLayout /> component should render post list layout for homepag
       Latest
     </h1>
     <p
-      role="text"
       tabIndex={0}
     >
       Welcome to our Blog App!

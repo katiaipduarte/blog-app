@@ -10,18 +10,23 @@ const Footer = (): JSX.Element => {
     <FooterContainer>
       <div className="container">
         <div className="social-icons">
-          <SocialIcon href="https://github.com/katiaipduarte" icon={faGithub} />
           <SocialIcon
+            name="github"
+            href="https://github.com/katiaipduarte"
+            icon={faGithub}
+          />
+          <SocialIcon
+            name="linkedin"
             href="https://www.linkedin.com/in/katiaipduarte/"
             icon={faLinkedin}
           />
         </div>
         <div className="general-information">
-          <p tabIndex={0} aria-label="Made By Katia Duarte" role="text">
+          <p tabIndex={0} aria-label="Made By Katia Duarte">
             Katia Duarte
           </p>
           <p>{` • `}</p>
-          <p tabIndex={0} role="text">{`© ${new Date().getFullYear()}`}</p>
+          <p tabIndex={0}>{`© ${new Date().getFullYear()}`}</p>
           <p>{` • `}</p>
           <Link href="/">Blog App</Link>
         </div>

@@ -320,13 +320,11 @@ exports[`the <Comments /> component should render comments list 1`] = `
       >
         <div>
           <h4
-            role="text"
             tabIndex={0}
           >
             test on 2021-06-28
           </h4>
           <p
-            role="text"
             tabIndex={0}
           >
             banana

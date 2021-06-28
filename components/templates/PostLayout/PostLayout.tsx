@@ -39,6 +39,7 @@ const PostLayout = (props: Props): JSX.Element => {
     <PostContainer>
       <header>
         <dl>
+          <dt></dt>
           <dd>
             <time
               aria-label={`Published on ${date}`}
@@ -63,7 +64,6 @@ const PostLayout = (props: Props): JSX.Element => {
           className="content"
           dangerouslySetInnerHTML={{ __html: post.content }}
           tabIndex={0}
-          role="text"
         ></div>
         <Comments comments={comments} postId={post.id} />
         <footer>
@@ -73,7 +73,7 @@ const PostLayout = (props: Props): JSX.Element => {
                 <div className="previous-article">
                   <h2>Previous Article</h2>
                   <Link
-                    href={`/blog/${prev.slug}`}
+                    href={`/blog/${prev.id}/${prev.slug}`}
                     aria-label={`Read ${prev.title} article`}
                   >
                     <button className="transparent" role="button">
@@ -86,7 +86,7 @@ const PostLayout = (props: Props): JSX.Element => {
                 <div className="next-article">
                   <h2>Next Article</h2>
                   <Link
-                    href={`/blog/${next.slug}`}
+                    href={`/blog/${next.id}/${next.slug}`}
                     aria-label={`Read ${next.title} article`}
                   >
                     <button className="transparent" role="button">

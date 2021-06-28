@@ -20,7 +20,7 @@ const CustomErrorLayout = (props: Props): JSX.Element => {
       </div>
       <div className="message">
         <h2 tabIndex={0}>{message}</h2>
-        <p role="text" tabIndex={0}>
+        <p tabIndex={0}>
           Don't worry just click on the following button and you can go back to
           our homepage!
         </p>

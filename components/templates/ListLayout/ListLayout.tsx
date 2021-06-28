@@ -58,6 +58,7 @@ const ListLayout = (props: Props): JSX.Element => {
               <li key={post.slug} className={homepage ? '' : 'blog-page'}>
                 <article>
                   <dl>
+                    <dt></dt>
                     <dd>
                       <time
                         aria-label={`Published on ${date}`}
@@ -78,9 +79,7 @@ const ListLayout = (props: Props): JSX.Element => {
                           {post.title}
                         </Link>
                       </h2>
-                      <p role="text" tabIndex={0}>
-                        {post.description}
-                      </p>
+                      <p tabIndex={0}>{post.description}</p>
                     </div>
                     {homepage && (
                       <Link
@@ -113,11 +112,7 @@ const ListLayout = (props: Props): JSX.Element => {
     <ListContainer>
       <div className="title">
         <h1 tabIndex={0}>{homepage ? 'Latest' : 'All Posts'}</h1>
-        {homepage && (
-          <p role="text" tabIndex={0}>
-            Welcome to our Blog App!
-          </p>
-        )}
+        {homepage && <p tabIndex={0}>Welcome to our Blog App!</p>}
         {!homepage && <SearchBar find={(term: string) => setTerm(term)} />}
       </div>
       <ul>{renderContent()}</ul>

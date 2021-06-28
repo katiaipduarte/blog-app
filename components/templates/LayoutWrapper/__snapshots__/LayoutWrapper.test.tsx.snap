@@ -349,6 +349,7 @@ exports[`the <LayoutWrapper /> component should render layout with  dark theme c
         className="social-icons"
       >
         <a
+          aria-label="Link to github"
           href="https://github.com/katiaipduarte"
           rel="noopener noreferrer"
           role="button"
@@ -373,6 +374,7 @@ exports[`the <LayoutWrapper /> component should render layout with  dark theme c
           </svg>
         </a>
         <a
+          aria-label="Link to linkedin"
           href="https://www.linkedin.com/in/katiaipduarte/"
           rel="noopener noreferrer"
           role="button"
@@ -402,7 +404,6 @@ exports[`the <LayoutWrapper /> component should render layout with  dark theme c
       >
         <p
           aria-label="Made By Katia Duarte"
-          role="text"
           tabIndex={0}
         >
           Katia Duarte
@@ -411,7 +412,6 @@ exports[`the <LayoutWrapper /> component should render layout with  dark theme c
            • 
         </p>
         <p
-          role="text"
           tabIndex={0}
         >
           © 2021
@@ -792,6 +792,7 @@ exports[`the <LayoutWrapper /> component should render layout with light theme c
         className="social-icons"
       >
         <a
+          aria-label="Link to github"
           href="https://github.com/katiaipduarte"
           rel="noopener noreferrer"
           role="button"
@@ -816,6 +817,7 @@ exports[`the <LayoutWrapper /> component should render layout with light theme c
           </svg>
         </a>
         <a
+          aria-label="Link to linkedin"
           href="https://www.linkedin.com/in/katiaipduarte/"
           rel="noopener noreferrer"
           role="button"
@@ -845,7 +847,6 @@ exports[`the <LayoutWrapper /> component should render layout with light theme c
       >
         <p
           aria-label="Made By Katia Duarte"
-          role="text"
           tabIndex={0}
         >
           Katia Duarte
@@ -854,7 +855,6 @@ exports[`the <LayoutWrapper /> component should render layout with light theme c
            • 
         </p>
         <p
-          role="text"
           tabIndex={0}
         >
           © 2021
@@ -981,6 +981,7 @@ exports[`the <LayoutWrapper /> component should render layout without theme 1`] 
         className="social-icons"
       >
         <a
+          aria-label="Link to github"
           href="https://github.com/katiaipduarte"
           rel="noopener noreferrer"
           role="button"
@@ -1005,6 +1006,7 @@ exports[`the <LayoutWrapper /> component should render layout without theme 1`] 
           </svg>
         </a>
         <a
+          aria-label="Link to linkedin"
           href="https://www.linkedin.com/in/katiaipduarte/"
           rel="noopener noreferrer"
           role="button"
@@ -1034,7 +1036,6 @@ exports[`the <LayoutWrapper /> component should render layout without theme 1`] 
       >
         <p
           aria-label="Made By Katia Duarte"
-          role="text"
           tabIndex={0}
         >
           Katia Duarte
@@ -1043,7 +1044,6 @@ exports[`the <LayoutWrapper /> component should render layout without theme 1`] 
            • 
         </p>
         <p
-          role="text"
           tabIndex={0}
         >
           © 2021

@@ -217,6 +217,7 @@ exports[`the <PostLayout /> component should render Post empty 1`] = `
 >
   <header>
     <dl>
+      <dt />
       <dd>
         <time
           aria-label="Published on Invalid Date"
@@ -245,7 +246,6 @@ exports[`the <PostLayout /> component should render Post empty 1`] = `
           "__html": undefined,
         }
       }
-      role="text"
       tabIndex={0}
     />
     <section
@@ -535,6 +535,7 @@ exports[`the <PostLayout /> component should render Post with 0 comments 1`] = `
 >
   <header>
     <dl>
+      <dt />
       <dd>
         <time
           aria-label="Published on Friday, January 1, 2021"
@@ -568,7 +569,6 @@ exports[`the <PostLayout /> component should render Post with 0 comments 1`] = `
           "__html": "bla",
         }
       }
-      role="text"
       tabIndex={0}
     />
     <section
@@ -858,6 +858,7 @@ exports[`the <PostLayout /> component should render Post with comments 1`] = `
 >
   <header>
     <dl>
+      <dt />
       <dd>
         <time
           aria-label="Published on Friday, January 1, 2021"
@@ -891,7 +892,6 @@ exports[`the <PostLayout /> component should render Post with comments 1`] = `
           "__html": "bla",
         }
       }
-      role="text"
       tabIndex={0}
     />
     <section
@@ -910,13 +910,11 @@ exports[`the <PostLayout /> component should render Post with comments 1`] = `
           >
             <div>
               <h4
-                role="text"
                 tabIndex={0}
               >
                 test on 2021-06-28
               </h4>
               <p
-                role="text"
                 tabIndex={0}
               >
                 banana
