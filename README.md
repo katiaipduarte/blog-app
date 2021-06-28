@@ -36,6 +36,7 @@ To use this app, first clone from GitHub via 'git clone https://github.com/katia
 
 ## Future Work
 
+[ ] Add a deployed DB<br>
 [ ] Add more unit tests and e2e ones<br>
 [ ] Add page transition loader<br>
 [ ] Add authentication<br>
