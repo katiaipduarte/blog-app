@@ -31,7 +31,7 @@ const Comments = (props: Props): JSX.Element => {
     return (
       <div className="parent">
         <div>
-          <h4 tabIndex={0}>{`${comment.user} on ${comment.date}`}</h4>
+          <h3 tabIndex={0}>{`${comment.user} on ${comment.date}`}</h3>
           <p tabIndex={0}>{comment.content}</p>
         </div>
         <button
@@ -55,10 +55,10 @@ const Comments = (props: Props): JSX.Element => {
             return (
               <div className="child" key={comment.id}>
                 <div>
-                  <h4
+                  <h3
                     tabIndex={0}
                     role="text"
-                  >{`${comment.user} response to ${user} on ${comment.date}`}</h4>
+                  >{`${comment.user} response to ${user} on ${comment.date}`}</h3>
                   <p tabIndex={0} role="text">
                     {comment.content}
                   </p>
@@ -94,7 +94,7 @@ const Comments = (props: Props): JSX.Element => {
 
   return (
     <CommentsContainer>
-      <h2 tabIndex={0} role="text">{`${commentList.length} Comments`}</h2>
+      <h2 tabIndex={0}>{`${commentList.length} Comments`}</h2>
       {renderComments()}
       <CommentForm
         postId={postId}

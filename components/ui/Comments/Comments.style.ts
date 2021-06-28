@@ -10,7 +10,7 @@ export const CommentsContainer = styled.section`
     li {
       margin: 1rem 0;
 
-      h4 {
+      h3 {
         color: ${({ theme }) => theme.grey};
         font-size: 0.75rem;
       }
@@ -37,7 +37,7 @@ export const CommentsContainer = styled.section`
   @media all and (min-width: 960px) {
     ul {
       li {
-        h4 {
+        h3 {
           font-size: 0.8rem;
         }
 
