@@ -27,7 +27,7 @@ const ListLayout = (props: Props): JSX.Element => {
     if (postList.length === 0) {
       return (
         <li>
-          <h2>No posts found.</h2>
+          <h2>{loading ? 'Loading posts' : 'No posts found'}</h2>
         </li>
       );
     } else {

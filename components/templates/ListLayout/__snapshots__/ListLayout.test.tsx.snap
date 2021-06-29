@@ -209,7 +209,7 @@ exports[`the <ListLayout /> component should render post list layout for blog pa
   <ul>
     <li>
       <h2>
-        No posts found.
+        Loading posts
       </h2>
     </li>
   </ul>
@@ -318,7 +318,7 @@ exports[`the <ListLayout /> component should render post list layout for homepag
   <ul>
     <li>
       <h2>
-        No posts found.
+        Loading posts
       </h2>
     </li>
   </ul>
