@@ -82,7 +82,10 @@ const CommentForm = (props: Props): JSX.Element => {
           onChange={handleChange}
           className={invalidUser ? 'invalid' : ''}
         />
-        <span className={invalidUser ? 'show message' : 'message'}>
+        <span
+          className={invalidUser ? 'show message' : 'message'}
+          data-testid="username-error-message"
+        >
           Username cannot be empty
         </span>
       </div>
@@ -95,11 +98,14 @@ const CommentForm = (props: Props): JSX.Element => {
           placeholder="Write your comment here..."
           className={invalidComment ? 'invalid' : ''}
         />
-        <span className={invalidComment ? 'show message' : 'message'}>
+        <span
+          className={invalidComment ? 'show message' : 'message'}
+          data-testid="comments-error-message"
+        >
           Comment cannot be empty
         </span>
       </div>
-      <button type="submit" className="full">
+      <button type="submit" className="full" data-testid="submit">
         Submit
       </button>
     </CommentFormContainer>

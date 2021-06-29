@@ -1,6 +1,6 @@
 import { faSearch, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { ChangeEvent, MouseEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent, MouseEvent, useState } from 'react';
 import { SearchBarContainer } from './SearchBar.style';
 
 type Props = {
@@ -24,19 +24,11 @@ const SearchBar = (props: Props): JSX.Element => {
     setShowClearButton(event.target.value.length !== 0);
   };
 
-  const handleMGBClick = (event: MouseEvent<HTMLButtonElement>): void => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
 
-    if (searchTerm.length >= 3) {
-      onClickSearchOption(searchTerm);
-    }
-  };
-
-  const onClickSearchOption = (item: string): void => {
-    if (item !== '') {
-      setSearchTerm(item);
-      find(item);
-    }
+    setSearchTerm(searchTerm);
+    find(searchTerm);
   };
 
   return (
@@ -44,12 +36,13 @@ const SearchBar = (props: Props): JSX.Element => {
       tabIndex={-1}
       role="searchbox"
       aria-label="Search article by name form"
+      onSubmit={e => handleSubmit(e)}
     >
       <button
         id="search-term-btn"
         aria-label="Click to search"
-        onClick={handleMGBClick}
         tabIndex={-1}
+        type="submit"
       >
         <FontAwesomeIcon icon={faSearch} />
       </button>

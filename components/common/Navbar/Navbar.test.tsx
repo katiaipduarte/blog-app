@@ -1,14 +1,10 @@
-/* eslint-disable @typescript-eslint/ban-types */
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import { mount, ReactWrapper } from 'enzyme';
-
 import Navbar from './Navbar';
 
 describe('<Navbar /> component Unit Test', () => {
-  let component: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
-
   beforeEach(() => {
-    component = mount(
+    render(
       <Navbar
         mountedComponent={true}
         theme="light"
@@ -18,15 +14,24 @@ describe('<Navbar /> component Unit Test', () => {
   });
 
   it('should render 1 <Navbar /> component', () => {
-    expect(component).toHaveLength(1);
+    const { container } = render(
+      <Navbar
+        mountedComponent={true}
+        theme="light"
+        themeToggler={jest.fn().mockName('mockedFunction')}
+      />
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should add active to className in ul, when clicking the faBars icon', () => {
-    const toggle = component.find('.toggle');
-    expect(toggle).toBeTruthy();
-    expect(component.find('ul').get(0).props.className).toEqual('menu');
+    const menuBtn = screen.getByTestId('menu-btn');
+    const menu = screen.getByTestId('menu');
 
-    toggle.find('a').at(0).simulate('click');
-    expect(component.find('ul').get(0).props.className).toEqual('menu active');
+    expect(menuBtn).toBeTruthy();
+    expect(menu.className).toEqual('menu');
+
+    fireEvent.click(screen.getByTestId('mobile-menu-btn'));
+    expect(menu.className).toEqual('menu active');
   });
 });

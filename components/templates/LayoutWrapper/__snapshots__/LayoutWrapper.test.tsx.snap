@@ -228,6 +228,7 @@ exports[`the <LayoutWrapper /> component should render layout with  dark theme c
     >
       <ul
         className="menu"
+        data-testid="menu"
       >
         <li
           className="logo"
@@ -281,6 +282,7 @@ exports[`the <LayoutWrapper /> component should render layout with  dark theme c
         </li>
         <li
           className="toggle"
+          data-testid="menu-btn"
         >
           <button
             aria-label="Toggle dark mode"
@@ -308,6 +310,7 @@ exports[`the <LayoutWrapper /> component should render layout with  dark theme c
           </button>
           <a
             aria-label="Click to open mobile menu"
+            data-testid="mobile-menu-btn"
             onClick={[Function]}
             role="button"
             tabIndex={0}
@@ -671,6 +674,7 @@ exports[`the <LayoutWrapper /> component should render layout with light theme c
     >
       <ul
         className="menu"
+        data-testid="menu"
       >
         <li
           className="logo"
@@ -724,6 +728,7 @@ exports[`the <LayoutWrapper /> component should render layout with light theme c
         </li>
         <li
           className="toggle"
+          data-testid="menu-btn"
         >
           <button
             aria-label="Toggle dark mode"
@@ -751,6 +756,7 @@ exports[`the <LayoutWrapper /> component should render layout with light theme c
           </button>
           <a
             aria-label="Click to open mobile menu"
+            data-testid="mobile-menu-btn"
             onClick={[Function]}
             role="button"
             tabIndex={0}
