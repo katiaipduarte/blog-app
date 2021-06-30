@@ -1,6 +1,6 @@
 import { faSearch, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { ChangeEvent, FormEvent, MouseEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 import { SearchBarContainer } from './SearchBar.style';
 
 type Props = {
