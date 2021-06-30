@@ -140,14 +140,15 @@ exports[`the <ListLayout /> component should render post list layout for blog pa
     <form
       aria-label="Search article by name form"
       className="c2"
+      onSubmit={[Function]}
       role="searchbox"
       tabIndex={-1}
     >
       <button
         aria-label="Click to search"
         id="search-term-btn"
-        onClick={[Function]}
         tabIndex={-1}
+        type="submit"
       >
         <svg
           aria-hidden="true"

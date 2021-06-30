@@ -20,7 +20,7 @@ const Navbar = (props: Props): JSX.Element => {
 
   return (
     <NavbarContainer>
-      <ul className={seeMobileMenu ? 'menu active' : 'menu'}>
+      <ul data-testid="menu" className={seeMobileMenu ? 'menu active' : 'menu'}>
         <li className="logo">
           <Link href="/">BlogApp</Link>
         </li>
@@ -30,13 +30,14 @@ const Navbar = (props: Props): JSX.Element => {
         <li className="theme-toggle">
           <ThemeSwitcher theme={theme} toggleTheme={themeToggler} />
         </li>
-        <li className="toggle">
+        <li className="toggle" data-testid="menu-btn">
           <ThemeSwitcher theme={theme} toggleTheme={themeToggler} />
           <a
             role="button"
             tabIndex={0}
             aria-label="Click to open mobile menu"
             onClick={() => setSeeMobileMenu(!seeMobileMenu)}
+            data-testid="mobile-menu-btn"
           >
             <FontAwesomeIcon icon={faBars} />
           </a>

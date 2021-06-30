@@ -85,6 +85,7 @@ exports[`the <CommentForm /> component should render comment form to add a comme
     />
     <span
       className="message"
+      data-testid="username-error-message"
     >
       Username cannot be empty
     </span>
@@ -100,12 +101,14 @@ exports[`the <CommentForm /> component should render comment form to add a comme
     />
     <span
       className="message"
+      data-testid="comments-error-message"
     >
       Comment cannot be empty
     </span>
   </div>
   <button
     className="full"
+    data-testid="submit"
     type="submit"
   >
     Submit
@@ -200,6 +203,7 @@ exports[`the <CommentForm /> component should render comment form to reply to a 
     />
     <span
       className="message"
+      data-testid="username-error-message"
     >
       Username cannot be empty
     </span>
@@ -215,12 +219,14 @@ exports[`the <CommentForm /> component should render comment form to reply to a 
     />
     <span
       className="message"
+      data-testid="comments-error-message"
     >
       Comment cannot be empty
     </span>
   </div>
   <button
     className="full"
+    data-testid="submit"
     type="submit"
   >
     Submit

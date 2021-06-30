@@ -277,6 +277,7 @@ exports[`the <PostLayout /> component should render Post empty 1`] = `
           />
           <span
             className="message"
+            data-testid="username-error-message"
           >
             Username cannot be empty
           </span>
@@ -292,12 +293,14 @@ exports[`the <PostLayout /> component should render Post empty 1`] = `
           />
           <span
             className="message"
+            data-testid="comments-error-message"
           >
             Comment cannot be empty
           </span>
         </div>
         <button
           className="full"
+          data-testid="submit"
           type="submit"
         >
           Submit
@@ -600,6 +603,7 @@ exports[`the <PostLayout /> component should render Post with 0 comments 1`] = `
           />
           <span
             className="message"
+            data-testid="username-error-message"
           >
             Username cannot be empty
           </span>
@@ -615,12 +619,14 @@ exports[`the <PostLayout /> component should render Post with 0 comments 1`] = `
           />
           <span
             className="message"
+            data-testid="comments-error-message"
           >
             Comment cannot be empty
           </span>
         </div>
         <button
           className="full"
+          data-testid="submit"
           type="submit"
         >
           Submit
@@ -969,6 +975,7 @@ exports[`the <PostLayout /> component should render Post with comments 1`] = `
           />
           <span
             className="message"
+            data-testid="username-error-message"
           >
             Username cannot be empty
           </span>
@@ -984,12 +991,14 @@ exports[`the <PostLayout /> component should render Post with comments 1`] = `
           />
           <span
             className="message"
+            data-testid="comments-error-message"
           >
             Comment cannot be empty
           </span>
         </div>
         <button
           className="full"
+          data-testid="submit"
           type="submit"
         >
           Submit

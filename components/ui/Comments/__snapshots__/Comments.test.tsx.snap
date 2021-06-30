@@ -151,6 +151,7 @@ exports[`the <Comments /> component should render 0 comments 1`] = `
       />
       <span
         className="message"
+        data-testid="username-error-message"
       >
         Username cannot be empty
       </span>
@@ -166,12 +167,14 @@ exports[`the <Comments /> component should render 0 comments 1`] = `
       />
       <span
         className="message"
+        data-testid="comments-error-message"
       >
         Comment cannot be empty
       </span>
     </div>
     <button
       className="full"
+      data-testid="submit"
       type="submit"
     >
       Submit
@@ -377,6 +380,7 @@ exports[`the <Comments /> component should render comments list 1`] = `
       />
       <span
         className="message"
+        data-testid="username-error-message"
       >
         Username cannot be empty
       </span>
@@ -392,12 +396,14 @@ exports[`the <Comments /> component should render comments list 1`] = `
       />
       <span
         className="message"
+        data-testid="comments-error-message"
       >
         Comment cannot be empty
       </span>
     </div>
     <button
       className="full"
+      data-testid="submit"
       type="submit"
     >
       Submit
